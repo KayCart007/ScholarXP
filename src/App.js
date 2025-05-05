@@ -543,7 +543,7 @@ const ScholarQuestApp = () => {
         }
         return 1;
     });
-    const [log, setLog] = useState<LogEntry[]>([]);
+    const [log, setLog] = useState([]);
     const [showRewardAnimation, setShowRewardAnimation] = useState(false);
     const [lastDate, setLastDate] = useState(() => {
         if (typeof window !== 'undefined') {
