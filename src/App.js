@@ -562,7 +562,7 @@ const ScholarQuestApp = () => {
       return false;
     });
     const [streakXpBonus, setStreakXpBonus] = useState(0);
-    const [badges, setBadges] = useState<string[]>(() => {
+    const [badges, setBadges] = useState(() => {
         if (typeof window !== 'undefined') {
             const storedBadges = localStorage.getItem('scholarQuestBadges');
             return storedBadges ? JSON.parse(storedBadges) : [];
